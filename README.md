@@ -1,4 +1,4 @@
-# JOCU - A Distributed JVM Profiler
+# Nubiz - A Distributed JVM Profiler
 
 ## Background
 
