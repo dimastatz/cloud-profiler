@@ -1,7 +1,8 @@
-# Cloud Provider (Nubiz)
+# Cloud Provider 
 
 ## Background
-Profiling is a process of dynamic program analysis that measures Memory and CPU usage during the runtime. Most commonly, profiling information servers to aid program optimizations.  For example, one of the most known JVM profilers is JProfiler. JProfiler collects the following data: methods calls data(aka CPU profiling), allocations (heap allocations, GC), threads and locks, higher level subsystems like JDBC, HTTP, etc. Two main components of JProfiler are JProfiler UI and JProfiler agent.
+Profiling is a dynamic code analysis. Profilers capture characteristics of the application as it runs, and then developers use this information to make applications faster and more efficient. For example, one of the most known JVM profilers is JProfiler. JProfiler collects the following data: methods calls data (aka CPU profiling), allocations (heap allocations, GC), threads and locks and data from higher level subsystems like JDBC, HTTP, etc. Two main components of JProfiler are JProfiler UI and JProfiler agent.
+
 <table width="256px">
   <tr>
     <td><img src="./images/jprofiler.png"/></td>
@@ -13,6 +14,7 @@ Jprofiler agent uses the JVM tool interface. JVMTI is a native interface that a 
 
 
 ## Problem Statement
+Profiling a standalone application is a fairly easy task today. There are a lot of tools  
 
 ## Facts and Observation
 
