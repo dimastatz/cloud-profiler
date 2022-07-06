@@ -14,7 +14,8 @@ Jprofiler agent uses the JVM tool interface. JVMTI is a native interface that a 
 
 
 ## Problem Statement
-Profiling a standalone application is a fairly easy task today. There are a lot of tools  
+Profiling distributed cloud applications cannot be done by commodity profilers. Here are some challenges:
+- Elasticity of Cloud Applications: Cloud Applications scale up and down dynamically to adapt to workload changes. Commodity profiles lack the ability to automatically discover and attach to new running instances of the same application.   
 
 ## Facts and Observation
 
