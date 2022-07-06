@@ -1,4 +1,4 @@
-# Cloud Provider (Nubiz)
+# Cloud Provider (Nubiz 2)
 
 ## Background
 Profiling is a process of dynamic program analysis that measures Memory and CPU usage during the runtime. Most commonly, profiling information servers to aid program optimizations.  For example, one of the most known JVM profilers is JProfiler. JProfiler collects the following data: methods calls data(aka CPU profiling), allocations (heap allocations, GC), threads and locks, higher level subsystems like JDBC, HTTP, etc. Two main components of JProfiler are JProfiler UI and JProfiler agent.
@@ -13,8 +13,6 @@ Jprofiler agent uses the JVM tool interface. JVMTI is a native interface that a 
 
 
 ## Problem Statement
-####
-
 
 ## Facts and Observation
 
