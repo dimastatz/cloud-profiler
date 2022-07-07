@@ -16,7 +16,7 @@ Jprofiler agent uses the JVM tool interface. JVMTI is a native interface that a 
 Profiling distributed cloud applications cannot be done by commodity profilers. Here are some challenges:
 - [Elasticity](https://en.wikipedia.org/wiki/Elasticity_(cloud_computing)): Cloud Applications scale up and down dynamically to adapt to workload changes. Commodity profiles lack the ability to automatically discover and attach to new running instances of the same application.
 - [Data Volume](https://en.wikipedia.org/wiki/Big_data): profiling a High Scale Cloud Application will generate a lot of data. For example JProfiler generates X MB/min.
--  
+- [Performance Testing](https://en.wikipedia.org/wiki/Software_performance_testing): 
 
 
 ## Facts and Observation
