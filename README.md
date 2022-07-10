@@ -22,7 +22,6 @@ Profiling distributed cloud applications cannot be done by commodity profilers. 
 - [Actionable Insights](https://en.wikipedia.org/wiki/Recommender_system): Today's standalone profilers are simple and require a lot of domain knowledge to make sense of collected data.
 - [Performance Testing](https://en.wikipedia.org/wiki/Software_performance_testing): Standalone Profilers have no capability to perform side by side comparison of two different sessions.   
 
-
 ## Facts and Observation
 
 ## Solution
