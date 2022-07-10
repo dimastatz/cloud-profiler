@@ -14,7 +14,8 @@ Jprofiler agent uses the JVM tool interface. JVMTI is a native interface that a 
 
 ## Problem Statement
 Profiling distributed cloud applications cannot be done by commodity profilers. Here are some challenges:
-- [Elasticity](https://en.wikipedia.org/wiki/Elasticity_(cloud_computing)): Cloud Applications scale up and down dynamically to adapt to workload changes. Commodity profiles lack the ability to automatically discover and attach to new running instances of the same application.
+- [Elasticity](https://en.wikipedia.org/wiki/Elasticity_(cloud_computing)): Cloud Applications scale up and down dynamically to adapt to workload changes. Standalone profiles lack the ability to automatically discover and attach to new running instances of the same application.
+- [Polyglot Application](https://en.wikipedia.org/wiki/Polyglot_(computing)): Cloud Application can consist of services that developed in different programming languages. Some Cloud Applications have layered structure and each layer is implemented in different Languages. Example: [PySpark](https://damientseng.com/spark/2017/11/20/pyspark-udf-a-cross-language-approach.html). 
 - [Data Volume](https://en.wikipedia.org/wiki/Big_data): profiling a High Scale Cloud Application will generate a lot of data. For example JProfiler generates X MB/min.
 - [Performance Testing](https://en.wikipedia.org/wiki/Software_performance_testing): 
 
