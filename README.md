@@ -15,7 +15,9 @@ Jprofiler agent uses the JVM tool interface. JVMTI is a native interface that a 
 ## Problem Statement
 Profiling distributed cloud applications cannot be done by commodity profilers. Here are some challenges:
 - [Elasticity](https://en.wikipedia.org/wiki/Elasticity_(cloud_computing)): Cloud Applications scale up and down dynamically to adapt to workload changes. Standalone profiles lack the ability to automatically discover and attach to new running instances of the same application.
+- [Security](https://www.crowdstrike.com/cybersecurity-101/cloud-security/): Cloud Application are running in isolated environments. Isolated environments are hard to access to attach or inject the profiler's agent.
 - [Cross-Language](https://damientseng.com/spark/2017/11/20/pyspark-udf-a-cross-language-approach.html): Some Cloud Application designed with a layered approach in mind. Fore example, in PySpark, Python Code run on top of Spark Core (Java/Scala)
+- [Microservice Architecture](https://en.wikipedia.org/wiki/Microservices): Some Cloud Applications designed as a collection of loose-coupled services. A cross process profiling capability can help to find performance issues. 
 - [Data Volume](https://en.wikipedia.org/wiki/Big_data): profiling a High Scale Cloud Application will generate a lot of data. For example JProfiler generates X MB/min.
 - [Performance Testing](https://en.wikipedia.org/wiki/Software_performance_testing): 
 
