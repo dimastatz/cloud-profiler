@@ -1,7 +1,7 @@
-# Cloud Profiler - CI/CD, Code Analysis, Regression and E2E Testing 
+# Cloud Profiler - Operational Excellence 
 
 ## Background
-Cloud Profiler continuously gathers CPU usage and memory-allocation information from Cloud Applications. It attributes that information to the source code that generated it, helping you identify the parts of applications that are consuming the most resources, and otherwise illuminating applications performance characteristics. Cloud Profiler addresses a lot of challenges in profiling Cloud Applications like Elasticity, Security, Data Volume and by itself has a Cloud Application Structure. Cloud Profiler has a Micro Services structure. These services developped in diffrent programming languages C++, Java, Go, JavaScript, Python. Such an Application is really difficult to maintain. This document contains a bunch of ideas about implementing code quality validations, regressions and e2e testing of CloudProfiler.
+Cloud Profiler continuously gathers CPU usage and memory-allocation information from Cloud Applications. It attributes that information to the source code that generated it, helping you identify the parts of applications that are consuming the most resources, and otherwise illuminating application performance characteristics. Cloud Profiler addresses a lot of challenges in profiling Cloud Applications like Elasticity, Security, Data Volume and by itself has a Cloud Application Structure. Cloud Profiler has a Micro Services structure. These services developed in different programming languages C++, Java, Go, JavaScript, Python. Such an Application is really difficult to maintain. This document contains a bunch of ideas about implementing code quality validations, regressions and e2e testing of Cloud Profiler.
 
 <table width="256px">
   <tr>
