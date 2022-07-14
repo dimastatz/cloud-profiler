@@ -12,11 +12,15 @@ Cloud Profiler continuously gathers CPU usage and memory-allocation information 
 
 
 ## Objectives
-- Velocity: improve team's velocity by keeping a clean and healthy codebase. 
-- Stability: improve system's stability by running fully automated CI/CD with regression tests 
+- Improve development velocity: allow development team to work efficiently and focus on adding new features by keeping a clean and healthy codebase. 
+- Allow deploying frequently: allow deploying frequent, small, and reversible changes to reduce the scope of a change. This results in easier troubleshooting and faster remediation.
+- Mitigate deployment risk: test changes and validate the results as soon as possible, to confirm new features and minimize the risk and impact of failed deployments.
 - Visibility: obtain a visibility on a current health state of the integration environment
 
-## CI/CD
+## Solution
+
+### CI/CD
+
 
 
 - Protect master:
@@ -42,3 +46,7 @@ Cloud Profiler continuously gathers CPU usage and memory-allocation information 
  
     - 3. Recomendation is running
     - 4. Test Propress
+
+## Milestones
+
+### Milestone 1
