@@ -301,10 +301,13 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="KgaD_0ngVMdxPKvL3von-19" value="block branch&amp;nbsp;&lt;br&gt;if step failed" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#990000;" vertex="1" connectable="0" parent="KgaD_0ngVMdxPKvL3von-18">
+                <mxCell id="KgaD_0ngVMdxPKvL3von-19" value="block branch submit&lt;br&gt;if any step failed" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#990000;" vertex="1" connectable="0" parent="KgaD_0ngVMdxPKvL3von-18">
                     <mxGeometry x="0.0567" y="-1" relative="1" as="geometry">
-                        <mxPoint x="4" y="-16" as="offset"/>
+                        <mxPoint x="102" y="-19" as="offset"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-30" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#990000;strokeColor=#990000;" edge="1" parent="KgaD_0ngVMdxPKvL3von-1" source="KgaD_0ngVMdxPKvL3von-13" target="KgaD_0ngVMdxPKvL3von-29">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="KgaD_0ngVMdxPKvL3von-13" value="Static Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
                     <mxGeometry x="513" y="128" width="80" height="80" as="geometry"/>
@@ -312,14 +315,70 @@
                 <mxCell id="KgaD_0ngVMdxPKvL3von-16" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://p.kindpng.com/picc/s/378-3786420_governance-png-free-circle-transparent-png.png;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
                     <mxGeometry x="516" y="131.07" width="22" height="21.02" as="geometry"/>
                 </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-25" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#990000;strokeColor=#990000;" edge="1" parent="KgaD_0ngVMdxPKvL3von-1" source="KgaD_0ngVMdxPKvL3von-20" target="KgaD_0ngVMdxPKvL3von-24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-26" value="run build" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#990000;" vertex="1" connectable="0" parent="KgaD_0ngVMdxPKvL3von-25">
+                    <mxGeometry x="-0.1646" relative="1" as="geometry">
+                        <mxPoint x="4" y="-10" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="KgaD_0ngVMdxPKvL3von-20" value="Git Master" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
                     <mxGeometry x="188" y="224" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="KgaD_0ngVMdxPKvL3von-21" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://git-scm.com/images/logos/downloads/Git-Icon-Black.png;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
                     <mxGeometry x="190" y="226" width="24" height="24" as="geometry"/>
                 </mxCell>
-                <mxCell id="KgaD_0ngVMdxPKvL3von-24" value="Git Master" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
+                <mxCell id="KgaD_0ngVMdxPKvL3von-33" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#990000;strokeColor=#990000;" edge="1" parent="KgaD_0ngVMdxPKvL3von-1" source="KgaD_0ngVMdxPKvL3von-24" target="KgaD_0ngVMdxPKvL3von-32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-24" value="Build and Publish" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
                     <mxGeometry x="351" y="224" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-28" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://static.thenounproject.com/png/2714855-200.png;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
+                    <mxGeometry x="353" y="226" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-31" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#990000;strokeColor=#990000;" edge="1" parent="KgaD_0ngVMdxPKvL3von-1" source="KgaD_0ngVMdxPKvL3von-29" target="KgaD_0ngVMdxPKvL3von-3">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="708" y="96"/>
+                            <mxPoint x="232" y="96"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-29" value="Integration&lt;br&gt;Tests" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
+                    <mxGeometry x="668" y="128" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-35" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#990000;strokeColor=#990000;" edge="1" parent="KgaD_0ngVMdxPKvL3von-1" source="KgaD_0ngVMdxPKvL3von-32" target="KgaD_0ngVMdxPKvL3von-34">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-32" value="Deploy to Stage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
+                    <mxGeometry x="513" y="224" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-36" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.406;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#990000;strokeColor=#990000;" edge="1" parent="KgaD_0ngVMdxPKvL3von-1" source="KgaD_0ngVMdxPKvL3von-34" target="KgaD_0ngVMdxPKvL3von-2">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="712" y="332"/>
+                            <mxPoint x="61" y="332"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-37" value="send regression test results &lt;br&gt;to all developers" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#990000;" vertex="1" connectable="0" parent="KgaD_0ngVMdxPKvL3von-36">
+                    <mxGeometry x="-0.04" y="3" relative="1" as="geometry">
+                        <mxPoint x="90" y="17" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-34" value="Run Regression" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
+                    <mxGeometry x="672" y="224" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-38" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=http://cdn.onlinewebfonts.com/svg/img_293206.png;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
+                    <mxGeometry x="670" y="130" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-39" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=http://cdn.onlinewebfonts.com/svg/img_293206.png;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
+                    <mxGeometry x="674" y="226" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="KgaD_0ngVMdxPKvL3von-40" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.pngrepo.com/png/26392/512/cloud-upload-button.png;" vertex="1" parent="KgaD_0ngVMdxPKvL3von-1">
+                    <mxGeometry x="515" y="223" width="24" height="24" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
