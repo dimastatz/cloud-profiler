@@ -20,7 +20,7 @@ Cloud Profiler continuously gathers CPU usage and memory-allocation information 
 ## Solution
 
 ### CI/CD
-CI/CD services builds the incremental code changes made by developers, then package them into software deliverables. Automated tests verify the software functionality, and automated deployment services deliver them to end users. CI/CD enforces early defect discovery, increase productivity, and provide faster release cycles. 
+CI/CD pipeline builds the incremental code changes made by developers, then package them into software deliverables, deploys to the target environment and run tests. Automated tests verify the software functionality and can block deployment due to tests failure. When designed correctly, CI/CD pipelines enforce early defect discovery, increase productivity, and provide faster release cycles. 
 
 <table width="256px">
   <tr>
