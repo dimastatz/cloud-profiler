@@ -21,6 +21,13 @@ Cloud Profiler continuously gathers CPU usage and memory-allocation information 
 
 ### CI/CD
 
+<table width="256px">
+  <tr>
+    <td><img src="../images/ci_cd.png"/></td>
+  </tr>
+  <tr><td align="center">CI/CD</td></tr>
+</table>  
+
 
 
 - Protect master:
