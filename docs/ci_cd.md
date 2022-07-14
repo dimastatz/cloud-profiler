@@ -5,7 +5,7 @@ Cloud Profiler continuously gathers CPU usage and memory-allocation information 
 
 <table width="256px">
   <tr>
-    <td><img src="./images/jprofiler.png"/></td>
+    <td><img src="../images/cloud-profiler-arch.png"/></td>
   </tr>
   <tr><td align="center">JProfiler</td></tr>
 </table>  
