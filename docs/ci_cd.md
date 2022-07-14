@@ -30,6 +30,9 @@ CI/CD pipeline builds the incremental code changes made by developers, then pack
 </table>  
 
 
+### Static Code Analysis
+Static code analysis uncovers defects and infrastructure issues earlier in the CI/CD pipeline. Our approach will perform automated checks against the overall quality of your code so your developers have more time to focus on what they do best, developing. Proposed tool is [Qodana](https://www.jetbrains.com/qodana/jvm/)
+
 
 
 - Protect master:
