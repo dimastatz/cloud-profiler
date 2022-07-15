@@ -31,7 +31,12 @@ CI/CD pipeline builds the incremental code changes made by developers, then pack
 
 
 ### Static Code Analysis
-Static code analysis uncovers defects and infrastructure issues earlier in the CI/CD pipeline. Our approach will perform automated checks against the overall quality of your code so your developers have more time to focus on what they do best, developing. Proposed tool is [Qodana](https://www.jetbrains.com/qodana/jvm/).
+Static code analysis uncovers defects and infrastructure issues earlier in the CI/CD pipeline. Our approach will perform automated checks against the overall quality of your code so your developers have more time to focus on what they do best, developing. Proposed tool is [Qodana](https://www.jetbrains.com/qodana/jvm/) by JetBrains.
+
+### Unit Testing
+The goal of unit testing is to isolate each part of the program and show that the individual parts are correct. A unit test provides a strict, written contract that the piece of code must satisfy. As a result, it affords several benefits.
+Proposes Frameworks: [Junit](https://junit.org/junit5/), [Pytest](https://docs.pytest.org/en/7.1.x/), JavaScript(?).
+
 
 
 
