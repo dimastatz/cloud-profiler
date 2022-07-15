@@ -13,9 +13,9 @@ Cloud Profiler continuously gathers CPU usage and memory-allocation information 
 
 ## Objectives
 - Improve development velocity: allow development team to work efficiently and focus on adding new features by keeping a clean and healthy codebase. 
-- Allow deploying frequently: allow deploying frequent, small, and reversible changes to reduce the scope of a change. This results in easier troubleshooting and faster remediation.
-- Mitigate deployment risk: test changes and validate the results as soon as possible, to confirm new features and minimize the risk and impact of failed deployments.
-- Visibility: obtain a visibility on a current health state of the integration environment
+- Automate deployments: allow deploying frequent, small, and reversible changes to reduce the scope of a change. This results in easier troubleshooting and faster remediation.
+- Mitigate deployment risk: automatically test changes and validate the results as soon as possible, to confirm new features and minimize the risk and impact of failed deployments.
+- Enhance system's observability: enable a system to tell when it’s broken, or what is about to break. Build extensive metrics and logging that will allow problem investigation and mitigation.
 
 ## Solution
 
@@ -31,7 +31,7 @@ CI/CD pipeline builds the incremental code changes made by developers, then pack
 
 
 ### Static Code Analysis
-Static code analysis uncovers defects and infrastructure issues earlier in the CI/CD pipeline. Our approach will perform automated checks against the overall quality of your code so your developers have more time to focus on what they do best, developing. Proposed tool is [Qodana](https://www.jetbrains.com/qodana/jvm/)
+Static code analysis uncovers defects and infrastructure issues earlier in the CI/CD pipeline. Our approach will perform automated checks against the overall quality of your code so your developers have more time to focus on what they do best, developing. Proposed tool is [Qodana](https://www.jetbrains.com/qodana/jvm/).
 
 
 
