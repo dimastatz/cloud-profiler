@@ -29,20 +29,18 @@ CI/CD pipeline builds the incremental code changes made by developers, then pack
   <tr><td align="center">CI/CD</td></tr>
 </table>  
 
-
 ### Static Code Analysis
-Static code analysis uncovers defects and infrastructure issues earlier in the CI/CD pipeline. Our approach will perform automated checks against the overall quality of your code, so your developers have more time to focus on what they do best, developing. Proposed tool is [Qodana](https://www.jetbrains.com/qodana/jvm/) by JetBrains. In addition, since developers use different IDE (eclipse, intellij, vscode) we can enforce code styling by running  
-
-
+Static code analysis uncovers defects and infrastructure issues earlier in the CI/CD pipeline. Our approach will perform automated checks against the overall quality of your code, so your developers have more time to focus on what they do best, developing. Proposed tool is [Qodana](https://www.jetbrains.com/qodana/jvm/) by JetBrains. In addition, since developers use different IDE (eclipse, intellij, vscode) we can enforce code styling/formatting in CI/CD.  
 
 ### Unit Testing
 The goal of unit testing is to isolate each part of the program and show that the individual parts are correct. A unit test provides a strict, written contract that the piece of code must satisfy. As a result, it affords several benefits.
-Proposed Frameworks: [Junit](https://junit.org/junit5/), [Pytest](https://docs.pytest.org/en/7.1.x/), JavaScript(?)Proposed unit test coverage ratio is 90%.
+Proposed Frameworks: [Junit](https://junit.org/junit5/), [Pytest](https://docs.pytest.org/en/7.1.x/), JavaScript(?). Proposed unit test coverage ratio is 90%.
 
-### 
+### Integration Testing
+Integration Tests are running after unit tests. Integration testing takes as its input modules that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
 
-
-
+### System Testing
+[TBD]()
 - Protect master:
     - 1. Run unitests and integartion tests before submit(merge to master).
 
@@ -66,6 +64,14 @@ Proposed Frameworks: [Junit](https://junit.org/junit5/), [Pytest](https://docs.p
  
     - 3. Recomendation is running
     - 4. Test Propress
+
+
+### Logging
+[TBD]() - [ELK]()
+
+### Metrics
+[TBD]() - [Prometheus]() and [Grafana]() 
+
 
 ## Milestones
 
