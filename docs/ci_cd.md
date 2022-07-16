@@ -15,7 +15,7 @@ Cloud Profiler continuously gathers CPU usage and memory-allocation information 
 - Improve development velocity: allow development team to work efficiently and focus on adding new features by keeping a clean and healthy codebase. 
 - Mitigate deployment risk: automatically test changes and validate the results as soon as possible, to confirm new features and minimize the risk and impact of failed deployments.
 - Enhance system's observability: enable a system to tell when it’s broken, or what is about to break. Build extensive metrics and logging that will allow problem investigation and mitigation.
-- Build System Tests Automation: build a reusable, maintainable, and stable systems test automation foundation. Test Automation Foundation should allow writing test scripts that are easy to understand, change and extend.  
+- Automate System Tests: build a reusable, maintainable, and stable systems test automation. Test Automation Foundation should allow writing test scripts that are easy to understand, change and extend.    
 
 
 ## Solution
