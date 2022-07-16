@@ -31,17 +31,17 @@ CI/CD pipeline builds the incremental code changes made by developers, then pack
 </table>  
 
 ### Static Code Analysis
-Static code analysis uncovers defects and infrastructure issues earlier in the CI/CD pipeline. Our approach will perform automated checks against the overall quality of your code, so your developers have more time to focus on what they do best, developing. Proposed tool is [Qodana](https://www.jetbrains.com/qodana/jvm/) by JetBrains. In addition, since developers use different IDE (eclipse, intellij, vscode) we can enforce code styling/formatting in CI/CD.  
+Static code analysis uncovers defects and infrastructure issues earlier in the CI/CD pipeline. Our approach is to perform automated checks against the overall quality of the code, so developers have more time to focus on what they do best, developing. Proposed tool is [Qodana](https://www.jetbrains.com/qodana/jvm/) by JetBrains. In addition, since developers use different IDE (eclipse, intellij, vscode, ...) we will enforce code styling/formatting in CI/CD.  
 
 ### Unit Testing
-The goal of unit testing is to isolate each part of the program and show that the individual parts are correct. A unit test provides a strict, written contract that the piece of code must satisfy. As a result, it affords several benefits.
-Proposed Frameworks: [Junit](https://junit.org/junit5/), [Pytest](https://docs.pytest.org/en/7.1.x/), JavaScript(?). Proposed unit test coverage ratio is 90%.
+The goal of unit testing is to isolate each part of the program and show that the individual parts are correct. A unit test provides a strict, written contract that the piece of code must satisfy. Proposed Frameworks: [Junit](https://junit.org/junit5/), [Pytest](https://docs.pytest.org/en/7.1.x/), JavaScript(?). Proposed unit test coverage ratio is 90%.
 
 ### Integration Testing
 Integration Tests are running after unit tests. Integration testing takes as its input modules that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
 
-### System Testing
-[TBD]()
+### System and Regression Testing
+[System Testing](https://en.wikipedia.org/wiki/System_testing) is a level of testing that validates the complete and fully integrated software product. [Regression tests](https://en.wikipedia.org/wiki/Regression_testing) are performed whenever anything has been changed in the system, in order to check that no new bugs have been introduced. Regression testing can be seen as a special case of the system testing.
+
 - Protect master:
     - 1. Run unitests and integartion tests before submit(merge to master).
 
@@ -68,12 +68,12 @@ Integration Tests are running after unit tests. Integration testing takes as its
 
 
 ### Logging
-[TBD]() - [ELK]()
+[TBD]() - [ELK](https://aws.amazon.com/opensearch-service/the-elk-stack/)
 
 ### Metrics
-[TBD]() - [Prometheus]() and [Grafana]() 
+[TBD]() - [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/) 
 
 
 ## Milestones
 
-### Milestone 1
+### Milestone 1 [TBD]()
