@@ -15,7 +15,7 @@ Cloud Profiler continuously gathers CPU usage and memory-allocation information 
 - Improve development velocity: allow development team to work efficiently and focus on adding new features by keeping a clean and healthy codebase. 
 - Mitigate deployment risk: automatically test changes and validate the results as soon as possible, to confirm new features and minimize the risk and impact of failed deployments.
 - Enhance system's observability: enable a system to tell when it’s broken, or what is about to break. Build extensive metrics and logging that will allow problem investigation and mitigation.
-- Automate System Tests: build a reusable, maintainable, and stable systems test automation. Test Automation Foundation should allow writing test scripts that are easy to understand, change and extend.    
+- Automate System Tests: test automation is a proven, cost-effective approach to improving software quality. Build a reusable, maintainable, and stable systems test automation that will allow developing new tests rapidly.
 
 
 ## Solution
@@ -40,32 +40,17 @@ The goal of unit testing is to isolate each part of the program and show that th
 Integration Tests are running after unit tests. Integration testing takes as its input modules that have been unit tested, groups them in larger aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the integrated system ready for system testing.
 
 ### System and Regression Testing
-[System Testing](https://en.wikipedia.org/wiki/System_testing) is a level of testing that validates the complete and fully integrated software product. [Regression tests](https://en.wikipedia.org/wiki/Regression_testing) are performed whenever anything has been changed in the system, in order to check that no new bugs have been introduced. Regression testing can be seen as a special case of the system testing.
-
-- Protect master:
-    - 1. Run unitests and integartion tests before submit(merge to master).
-
-- Stability (continues integration test):
-- 1. Integration Test (Jenkins Job)
-    - Regression Tests (run test application - dedicated to regression tests)
-    
-    1. Test Gateway endpoint:
-        - Open Session
-        - Test Mongo for metadata
-        - Test Elastic for data
-        - Test Data consistency
-        - Close Session
-    
-    2. Test Recomendation
-        - Test the number of recomendations
-        - Test recomendation validity   
-        - 
-
-    2. Metrics based Tests (advanced) 
- 
-    - 3. Recomendation is running
-    - 4. Test Propress
-
+[System Testing](https://en.wikipedia.org/wiki/System_testing) is a level of testing that validates the complete and fully integrated software product. [Regression tests](https://en.wikipedia.org/wiki/Regression_testing) are performed whenever anything has been changed in the system, in order to check that no new bugs have been introduced. Regression testing can be seen as a special case of the system testing. 
+Git Submit (merging branch to master) will start the System Testing. We prefer a permissive approach, and avoid using [gated commits](https://en.wikipedia.org/wiki/Gated_commit), but instead we will email the systems tests report to the relevant development group. 
+It is important to build a test automation that will allow easily write, extend and change system tests. It is better not to do it from scratch, and to rely on one of the widely used frameworks that supported by big dev community. The recommended framework is [Robot Framework](https://robotframework.org/). Robot Framework is a generic open source automation framework and is supported by [Robot Framework Foundation](https://robotframework.org/foundation/). Robot Framework has an easy syntax, utilizing human-readable keywords.
+- Example: 
+    ```python
+    open session
+    read metadata from mongo
+    read data from elasticsearch
+    verify data
+    close session
+    ```
 
 ### Logging
 [TBD]() - [ELK](https://aws.amazon.com/opensearch-service/the-elk-stack/)
