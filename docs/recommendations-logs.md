@@ -13,7 +13,7 @@ However, logging can be a source of performance problems. The document provides 
     - Stop JVM Profiling Session
 
 - Actor 2: Profiling Expert
-    - Run any CRUD operation on Knowledge DB
+    - Run any [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operation on Knowledge DB
 
 - Actor 3: Reasoning Engine
     - Read Profiling Data from Profiling Sessions DB
