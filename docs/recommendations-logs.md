@@ -7,6 +7,20 @@ However, logging can be a source of performance problems. The document provides 
 ## Requirements
 
 ### Functional
+- Actor 1: Cloud Profiler
+    1. Start JVM Profiling Session
+    2. Write Profiling Data to DB
+    3. Stop JVM Profiling Session
 
+- Actor 2: Profiling Expert
+    1. Run CRUD on Knowledge DB
+
+- Actor 3: Reasoning Engine
+    1. Read Profiling Data from Profiling Sessions DB
+    2. Read knowledge from Knowledge DB
+    3. Perform Reasoning
+    4. Write Reasoning Flow and Result to Reasoning DB
 
 ### Non-Functional
+1. Handle Scale of 1000 profiling sessions. Each session generates up to 100Kb/sec
+2. Knowledge DN  
