@@ -23,8 +23,13 @@ However, logging can be a source of performance problems. The document provides 
 
 - Actor 4: User
     - View reasoning flow and result
-    - ?
+
 
 ### Non-Functional
 1. Handle Scale of 1000 profiling sessions. Each session generates up to 100Kb/sec
-2. Knowledge D  
+2. Knowledge Base should be scaled to hold 1M knowledge facts and reasoning steps
+
+
+## High-Level Design
+
+## Low-Level Design
