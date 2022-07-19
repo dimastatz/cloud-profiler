@@ -8,6 +8,9 @@ This document describes the design of the Expert System for Software Profiling. 
 ## Requirements
 
 ### Functional Requirements
+- Actor 1: Domain Expert
+- Actor 2: Non-Expert User
+- Actor 3: 
 
 ### Non-Functional Requirements
 
