@@ -23,5 +23,6 @@ Profiling distributed cloud applications cannot be done by commodity profilers. 
 - [Performance Testing](https://en.wikipedia.org/wiki/Software_performance_testing): Standalone Profilers have no capability to perform side by side comparison of two different sessions.   
 
 ## Facts and Observation
+- There are a bunch of existing products in this area. For example [AWS CodeGuru](https://aws.amazon.com/codeguru/), [Google Cloud Profiler](https://cloud.google.com/profiler/docs), [Pyroscope](https://www.infracloud.io/blogs/continuous-profiling-kubernetes-pyroscope/).
 
 ## Solution
