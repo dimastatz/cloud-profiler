@@ -35,12 +35,21 @@ The Profiling Expert System consisting of the Knowledge and Inference Engine.
 
 ## Low-Level Design
 
-## Appendix
+### Flow 1: Profiling JVM Logging Frameworks
 
-### Example 1: Profiling JVM Logging Frameworks
+### Problem Statement
+Logging runtime information in software application is critically useful for understanding the behavior of any app, Especially in cases when encountering unexpected scenarios or errors in production environment. Usually, developers have no access to the production and can't use debugger and profilers. Here log data can help. 
 
-#### Background
-Logging runtime information in software application is critically useful for understanding the behavior of any app, Especially in cases when encountering unexpected scenarios or errors in production environment. Usually, developers have no access to the production and can't use debugger and profilers. Here log data can help.  
+- Excessive Logging
+- Using a Single Log File
+- Choosing Incorrect Log Levels
+-  
 
-### Example 2: Profiling Performance Problems
-    [TBD]()
+
+
+
+
+
+### Flow 2: [TBD]()
+
+
