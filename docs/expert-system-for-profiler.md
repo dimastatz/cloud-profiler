@@ -38,17 +38,27 @@ The Profiling Expert System consisting of the Knowledge and Inference Engine.
 ### Flow 1: Profiling JVM Logging Frameworks
 
 ### Problem Statement
-Logging runtime information in software application is critically useful for understanding the behavior of any app, Especially in cases when encountering unexpected scenarios or errors in production environment. Usually, developers have no access to the production and can't use debugger and profilers. Here log data can help. 
+Logging runtime information in software application is critically useful for understanding the behavior of any app, Especially in cases when encountering unexpected scenarios or errors in production environment. Usually, developers have no access to the production and can't use debugger and profilers. Here log data can help. However, improper usage of logging can have a significant impact on overall performance of software applications. Here is most common performance issues when making use of logging:
 
-- Excessive Logging
+- Excessive Logging:
     - Incorrect log level
     - Too many log writes in general
     - Writing big messages
 
-- Slow Logging IO
+- Slow Logging IO:
     - Bufferless IO
     - Using a Single Log File
-    - Expensive operation inside log (example string concat) 
+    - Expensive operation inside log
+
+<table width="256px">
+  <tr>
+    <td><img src="../images/expert-systems.png"/></td>
+  </tr>
+  <tr><td align="center">Expert Systems</td></tr>
+</table>  
+
+### Objectives
+
 
 ### Flow 2: [TBD]()
 
