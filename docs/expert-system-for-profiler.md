@@ -38,7 +38,7 @@ The Profiling Expert System consisting of the Knowledge and Inference Engine.
 ### Flow 1: Profiling JVM Logging Frameworks
 
 ### Problem Statement
-Logging runtime information in software application is critically useful for understanding the behavior of any app, especially in cases when encountering unexpected scenarios or errors in production environment. Usually, developers have no access to the production and can't use debugger and profilers. Here log data can help. 
+Logging runtime information in software application is critically useful for understanding the behavior of any app, especially in cases when encountering unexpected scenarios or errors in production environment. Usually, developers have no access to the production and can't use debugger and profilers. Here log data can help.   
 Java takes a customizable and extensible approach to logging. Java provides a basic logging API through the java.util.logging package, and it can be implemented in a third party package. When an application makes a logging call, the Logger records the event in a LogRecord and forwards it to the appropriate Handler. The Handler then formats the record using a Layout before sending it a destination such as the console, a file, or another application. Additionally, you can use one or more Filters to specify which Handler should be used for which events. Filters aren’t required, but they give you greater control over the flow of your log messages.
 
 <table width="256px">
