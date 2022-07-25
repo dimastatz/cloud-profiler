@@ -41,14 +41,14 @@ The Profiling Expert System consisting of the Knowledge and Inference Engine.
 Logging runtime information in software application is critically useful for understanding the behavior of any app, Especially in cases when encountering unexpected scenarios or errors in production environment. Usually, developers have no access to the production and can't use debugger and profilers. Here log data can help. 
 
 - Excessive Logging
-- Using a Single Log File
-- Choosing Incorrect Log Levels
--  
+    - Incorrect log level
+    - Too many log writes in general
+    - Writing big messages
 
-
-
-
-
+- Slow Logging IO
+    - Bufferless IO
+    - Using a Single Log File
+    - Expensive operation inside log (example string concat) 
 
 ### Flow 2: [TBD]()
 
