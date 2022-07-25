@@ -52,9 +52,9 @@ Logging runtime information in software application is critically useful for und
 
 <table width="256px">
   <tr>
-    <td><img src="../images/expert-systems.png"/></td>
+    <td><img src="../images/java-log.png"/></td>
   </tr>
-  <tr><td align="center">Expert Systems</td></tr>
+  <tr><td align="center">JVM Logger</td></tr>
 </table>  
 
 ### Objectives
