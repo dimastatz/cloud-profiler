@@ -38,7 +38,8 @@ The Profiling Expert System consisting of the Knowledge and Inference Engine.
 ### Flow 1: Profiling JVM Logging Frameworks
 
 ### Problem Statement
-Logging runtime information in software application is critically useful for understanding the behavior of any app, especially in cases when encountering unexpected scenarios or errors in production environment. Usually, developers have no access to the production and can't use debugger and profilers. Here log data can help. However, improper usage of logging can have a significant impact on overall performance of software applications. 
+Logging runtime information in software application is critically useful for understanding the behavior of any app, especially in cases when encountering unexpected scenarios or errors in production environment. Usually, developers have no access to the production and can't use debugger and profilers. Here log data can help. 
+Java takes a customizable and extensible approach to logging. Java provides a basic logging API through the java.util.logging package, and it can be implemented in a third party package. When an application makes a logging call, the Logger records the event in a LogRecord and forwards it to the appropriate Handler. The Handler then formats the record using a Layout before sending it a destination such as the console, a file, or another application. Additionally, you can use one or more Filters to specify which Handler should be used for which events. Filters aren’t required, but they give you greater control over the flow of your log messages.
 
 <table width="256px">
   <tr>
@@ -47,7 +48,7 @@ Logging runtime information in software application is critically useful for und
   <tr><td align="center">JVM Logger</td></tr>
 </table>  
 
-Here is the most common performance issues when making use of logging:
+Improper usage of logging can have a significant impact on overall performance of software applications. Here is the most common performance issues when making use of logging:
 
 - Logging in the Hot Path: logging in a portion of the code that’s critical and executed very often is expensive. Unless it’s indispensable, you want to avoid logging here because it could cause an I/O bottleneck.
 - Expensive operation inside log: logging can and does impact performance. One of the ways in which this can happen is when you perform expensive function calls that could be avoided. Consider the following line:
