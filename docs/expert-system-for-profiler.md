@@ -55,12 +55,15 @@ Improper usage of logging can have a significant impact on overall performance o
 ```java
 log.info(String.format("message %s", expensiveCall()));
 ```
-- Incorrect log level (DEBUG, INFO)
-- Writing big messages
-- Bufferless IO
-- Using a single file for all logs 
+- Excessive Logging: avoid logging too much information. This can happen in an attempt to capture all potentially relevant data.
+```java
+logger.info("Starting method execution: " + joinPoint.getSignature().getName() + " in class:"+joinPoint.getSignature().getDeclaringTypeName());
+Object result = joinPoint.proceed();
+logger.info("Exiting method execution: " + joinPoint.getSignature().getName() + " in class:"+joinPoint.getSignature().getDeclaringTypeName());
+```
+- File I/O operations without a buffer: I/O operations may be expensive.
+- Sending big messages to log: For example logging errors with long stack traces.
    
-
 
 ### Objectives
 
