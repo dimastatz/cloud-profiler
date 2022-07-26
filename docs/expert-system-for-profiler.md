@@ -93,7 +93,7 @@ The required recommendations will be implemented by re-using existing Recommenda
   <tr><td align="center">Recommendation Engine Infrastructure</td></tr>
 </table> 
 
-On Recommendation Engine activation, each one of the investigations(LoggerSlowWritesInvestigation, LoggerExpensiveOperationInvestigation, LoggerHotPathInvestigation, LoggerExcessiveWritesInvestigation, LoggerLargeMessagesInvestigation) will run and use the processor API to obtain the CPU Usage Samplings and Heap Allocation Samplings.
+On Recommendation Engine activation, each one of the investigations(LoggerSlowWritesInvestigation, LoggerExpensiveOperationInvestigation, LoggerHotPathInvestigation, LoggerExcessiveWritesInvestigation, LoggerLargeMessagesInvestigation) will run and use the Processor Query API to obtain the CPU Usage Samplings and Heap Allocation Samplings.
 
 #### CPU Usage Sampling Structure
 Required fields for CPU Usage Sampling
@@ -125,7 +125,15 @@ SITES BEGIN (ordered by live bytes) Fri Oct 22 11:52:24 2022
     5  5.05% 68.84%    131072    1    131072     1 301710 byte[]
 ```
 
+#### Sequence Diagram for Hot Path Investigations
+Hot Path Investigation is pretty straightforward and fully relies on CPU Usage Samplings. First, CPU Usage Sampling data is loaded from the Processor Query API. Then Hot Path Investigation runs FindHotPath Step to find the most expensive paths in terms of number of invocation and execution time. The next step finds the usage of one of JVM Logging Frameworks in the Hot Path. If logging is not found, the investigation terminates. Otherwise, Hot Path Investigation will generate the ChangeLogLevel recommendation if logLevel != ERROR. If logLevel == ERROR, Hot Path Investigation will generate AvoidLoggingInHotPath recommendation.
 
+<table width="256px">
+  <tr>
+    <td><img src="../images/java-log.png"/></td>
+  </tr>
+  <tr><td align="center">Hot Path Investigation</td></tr>
+</table> 
 
 
 
