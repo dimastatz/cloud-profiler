@@ -62,7 +62,7 @@ Object result = joinPoint.proceed();
 logger.info("Exiting method execution: " + joinPoint.getSignature().getName() + " in class:"+joinPoint.getSignature().getDeclaringTypeName());
 ```
 - Problem 4: logging large messages. Consider an example when developer logs responses with payloads that come from external services. Another well known example when logging error with long stack traces.
-- Problem 5: slow write operations. By default, logging is blocking. When the runtime executes the log statement, the log gets written on the disk. The speed of writing onto the disk depends a lot on the underlying hardware which may be slow..
+- Problem 5: slow write operations. By default, logging is blocking. When the runtime executes the log statement, the log gets written on the disk. The speed of writing onto the disk depends a lot on the underlying hardware which may be slow.
 
    
 ### Objectives
@@ -88,7 +88,7 @@ The required recommendations will be implemented by re-using existing Recommenda
 
 <table width="256px">
   <tr>
-    <td><img src="../images/java-log.png"/></td>
+    <td><img src="../images/static-diagram.png"/></td>
   </tr>
   <tr><td align="center">Recommendation Engine Infrastructure</td></tr>
 </table> 
@@ -100,7 +100,7 @@ Required fields for CPU Usage Sampling
 - Number of Calls: number of calls for each method
 - Total Time: for the total time spent in the given function (excluding time made in calls to sub-functions)
 - Per Call: is the quotient of Total Time divided by Number of Calls
-- Cumulative Time: time spent in this and all subfunctions
+- Cumulative Time: time spent in this and all sub-functions
 - Per Call: is the quotient of Cumulative Time divided by Number of Calls
 
 #### Heap Allocation Sampling Structure
@@ -109,7 +109,7 @@ Required fields for CPU Usage Sampling
 - Live Bytes: amount of allocated and not collected by GC bytes
 - Live Objects: number of allocated and not collected by GC objects
 - Self (Percent): amount of allocation in percents not including upper frames 
-- Accum (Percent): ammout of allocation in percents including upper frames
+- Accum (Percent): amount of allocation in percents including upper frames
 - Class Name: class where allocations happened
 
 The data can look as follows in profiler
@@ -130,7 +130,7 @@ Hot Path Investigation is pretty straightforward and fully relies on CPU Usage S
 
 <table width="256px">
   <tr>
-    <td><img src="../images/java-log.png"/></td>
+    <td><img src="../images/sqs-dgr-investigation.png"/></td>
   </tr>
   <tr><td align="center">Hot Path Investigation</td></tr>
 </table> 
