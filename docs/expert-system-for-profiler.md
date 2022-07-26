@@ -50,23 +50,23 @@ Java takes a customizable and extensible approach to logging. Java provides a ba
 
 Improper usage of logging can have a significant impact on overall performance of software applications. Here is the most common performance issues when making use of logging:
 
-- Logging in the Hot Path: logging in a portion of the code that’s critical and executed very often is expensive. Unless it’s indispensable, you want to avoid logging here because it could cause an I/O bottleneck.
-- Expensive operation inside log: logging can and does impact performance. One of the ways in which this can happen is when you perform expensive function calls that could be avoided. Consider the following line:
+- Problem 1: logging in the Hot Path. Logging in a portion of the code that’s critical and executed very often is expensive. Unless it’s indispensable, you want to avoid logging here because it could cause an I/O bottleneck.
+- Problem 2: expensive operation inside log. Logging can and does impact performance. One of the ways in which this can happen is when you perform expensive function calls that could be avoided. Consider the following line:
 ```java
 log.info(String.format("message %s", expensiveCall()));
 ```
-- Excessive Logging: avoid logging too much information. This can happen in an attempt to capture all potentially relevant data.
+- Problem 3: excessive Logging. This can happen in an attempt to capture all potentially relevant data.
 ```java
 logger.info("Starting method execution: " + joinPoint.getSignature().getName() + " in class:"+joinPoint.getSignature().getDeclaringTypeName());
 Object result = joinPoint.proceed();
 logger.info("Exiting method execution: " + joinPoint.getSignature().getName() + " in class:"+joinPoint.getSignature().getDeclaringTypeName());
 ```
-- File I/O operations without a buffer: buffering is used to reduce IO operations when I/O is expensive. Buffered logger stores log records in memory and directs log to the destination on reaching the buffer threshold.
+- Problem 4: logging large messages. Consider an example when developer logs responses with payloads that come from external services. Another well known example when logging error with long stack traces.
+- Problem 5: slow write operations. By default, logging is blocking. When the runtime executes the log statement, the log gets written on the disk. The speed of writing onto the disk depends a lot on the underlying hardware which may be slow..
 
    
-
 ### Objectives
-
+Here are just a few recommendation to improve logging performance of your system
 
 ### Flow 2: [TBD]()
 
