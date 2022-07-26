@@ -135,6 +135,7 @@ Hot Path Investigation is pretty straightforward and fully relies on CPU Usage S
   <tr><td align="center">Hot Path Investigation</td></tr>
 </table> 
 
+All logging performance investigations (except of LoggerLargeMessageInvestigation) rely on CPU Samplings and are very similar to Hot Path. LoggerLargeMessageInvestigation uses Heap Allocations data to find large object that created by Logger class. 
 
 
 ### Flow 2: [TBD]()
