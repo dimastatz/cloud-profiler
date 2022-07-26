@@ -89,11 +89,19 @@ The required recommendations will be implemented by re-using existing Recommenda
     <td><img src="../images/java-log.png"/></td>
   </tr>
   <tr><td align="center">Recommendation Engine Infrastructure</td></tr>
-</table>  
+</table> 
 
+On Recommendation Engine activation, each one of the investigations(LoggerSlowWrites, LoggerExpensiveOperation, LoggerHotPath, LoggerExcessiveWrites, LoggerLargeMessages) will run and use the processor API to obtain the CPU Usage Samplings and Heap Allocation Samplings.
 
+#### CPU Usage Samplings
+Required fields for CPU Usage Sampling
+- Number of Calls: number of calls for each method
+- Total Time: for the total time spent in the given function (excluding time made in calls to sub-functions)
+- Per Call: is the quotient of Total Time divided by Number of Calls
+- Cumulative Time: time spent in this and all subfunctions
+- Per Call: is the quotient of Cumulative Time divided by Number of Calls
 
-
+#### Heap Allocation Samplings
 
 
 
