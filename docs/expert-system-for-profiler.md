@@ -61,8 +61,8 @@ logger.info("Starting method execution: " + joinPoint.getSignature().getName() +
 Object result = joinPoint.proceed();
 logger.info("Exiting method execution: " + joinPoint.getSignature().getName() + " in class:"+joinPoint.getSignature().getDeclaringTypeName());
 ```
-- File I/O operations without a buffer: I/O operations may be expensive.
-- Sending big messages to log: For example logging errors with long stack traces.
+- File I/O operations without a buffer: buffering is used to reduce IO operations when I/O is expensive. Buffered logger stores log records in memory and directs log to the destination on reaching the buffer threshold.
+
    
 
 ### Objectives
