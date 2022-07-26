@@ -82,6 +82,8 @@ Here is the list of recommendation to improve logging performance.
 
 
 ### Solution
+
+#### Static Diagram
 The required recommendations will be implemented by re-using existing Recommendation Engine Infrastructure. Main infrastructures classes are Engine, Flow, Investigation, Steps and Summary.
 
 <table width="256px">
@@ -91,9 +93,9 @@ The required recommendations will be implemented by re-using existing Recommenda
   <tr><td align="center">Recommendation Engine Infrastructure</td></tr>
 </table> 
 
-On Recommendation Engine activation, each one of the investigations(LoggerSlowWrites, LoggerExpensiveOperation, LoggerHotPath, LoggerExcessiveWrites, LoggerLargeMessages) will run and use the processor API to obtain the CPU Usage Samplings and Heap Allocation Samplings.
+On Recommendation Engine activation, each one of the investigations(LoggerSlowWritesInvestigation, LoggerExpensiveOperationInvestigation, LoggerHotPathInvestigation, LoggerExcessiveWritesInvestigation, LoggerLargeMessagesInvestigation) will run and use the processor API to obtain the CPU Usage Samplings and Heap Allocation Samplings.
 
-#### CPU Usage Samplings
+#### CPU Usage Sampling Structure
 Required fields for CPU Usage Sampling
 - Number of Calls: number of calls for each method
 - Total Time: for the total time spent in the given function (excluding time made in calls to sub-functions)
@@ -101,7 +103,28 @@ Required fields for CPU Usage Sampling
 - Cumulative Time: time spent in this and all subfunctions
 - Per Call: is the quotient of Cumulative Time divided by Number of Calls
 
-#### Heap Allocation Samplings
+#### Heap Allocation Sampling Structure
+- Allocated Bytes
+- Allocated Objects
+- Live Bytes
+- Live Objects
+- Self (Percent)
+- Accum (Percent)
+- Class Name
+
+The data can look as follows in profiler
+```Bash
+
+SITES BEGIN (ordered by live bytes) Fri Oct 22 11:52:24 2022
+          percent          live          alloc-ed  stack class
+ rank   self  accum     bytes objs     bytes  objs trace name
+    1 44.73% 44.73%   1161280 14516  1161280 14516 302032 java.util.zip.ZipEntry
+    2  8.95% 53.67%    232256 14516   232256 14516 302033 com.sun.tools.javac.util.List
+    3  5.06% 58.74%    131504    2    131504     2 301029 com.sun.tools.javac.util.Name[]
+    4  5.05% 63.79%    131088    1    131088     1 301030 byte[]
+    5  5.05% 68.84%    131072    1    131072     1 301710 byte[]
+```
+
 
 
 
