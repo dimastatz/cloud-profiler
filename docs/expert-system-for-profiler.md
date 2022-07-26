@@ -51,7 +51,7 @@ Java takes a customizable and extensible approach to logging. Java provides a ba
 Improper usage of logging can have a significant impact on overall performance of software applications. Here is the most common performance issues when making use of logging:
 
 - Problem 1: logging in the Hot Path. Logging in a portion of the code that’s critical and executed very often is expensive. Unless it’s indispensable, you want to avoid logging here because it could cause an I/O bottleneck.
-- Problem 2: expensive operation inside log. Logging can and does impact performance. One of the ways in which this can happen is when you perform expensive function calls that could be avoided. Consider the following line:
+- Problem 2: expensive operation inside log. Logging can and does impact performance. One of the ways in which this can happen is when developers perform expensive function calls that could be avoided.
 ```java
 log.info(String.format("message %s", expensiveCall()));
 ```
@@ -66,7 +66,12 @@ logger.info("Exiting method execution: " + joinPoint.getSignature().getName() + 
 
    
 ### Objectives
-Here are just a few recommendation to improve logging performance of your system
+Here are just a few recommendation to improve logging performance
+- Problem 1: logging in the Hot Path.
+    - 1. Avoid logging in the Hot Path.
+    - 2. Change log filtering, leaving only ERROR logs in the Hot Path.
+- Problem 2: expensive operation inside logs.
+  - 1. TBD
 
 ### Flow 2: [TBD]()
 
