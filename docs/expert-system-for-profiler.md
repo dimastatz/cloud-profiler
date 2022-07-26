@@ -82,6 +82,21 @@ Here is the list of recommendation to improve logging performance.
 
 
 ### Solution
+The required recommendations will be implemented by re-using existing Recommendation Engine Infrastructure. Main infrastructures classes are Engine, Flow, Investigation, Steps and Summary.
+
+<table width="256px">
+  <tr>
+    <td><img src="../images/java-log.png"/></td>
+  </tr>
+  <tr><td align="center">Recommendation Engine Infrastructure</td></tr>
+</table>  
+
+
+
+
+
+
+
 
 ### Flow 2: [TBD]()
 
