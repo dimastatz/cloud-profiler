@@ -67,11 +67,17 @@ logger.info("Exiting method execution: " + joinPoint.getSignature().getName() + 
    
 ### Objectives
 Here are just a few recommendation to improve logging performance
-- Problem 1: logging in the Hot Path.
-    - 1. Avoid logging in the Hot Path.
-    - 2. Change log filtering, leaving only ERROR logs in the Hot Path.
-- Problem 2: expensive operation inside logs.
-  - 1. TBD
+- Recommendation for logging in the Hot Path:
+  - Change log filtering, leaving only ERROR logs in the Hot Path.
+  - Avoid logging in the Hot Path when possible.
+  - Write only fraction of logs
+- Recommendation for expensive operation inside logs:
+  - Avoid expensive operation inside logs.
+- Recommendation for excessive logging:
+  - Avoid excessive logging when possible
+- Recommendation for logging large messages:
+  - 
+
 
 ### Flow 2: [TBD]()
 
