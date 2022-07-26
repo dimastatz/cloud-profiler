@@ -104,13 +104,13 @@ Required fields for CPU Usage Sampling
 - Per Call: is the quotient of Cumulative Time divided by Number of Calls
 
 #### Heap Allocation Sampling Structure
-- Allocated Bytes
-- Allocated Objects
-- Live Bytes
-- Live Objects
-- Self (Percent)
-- Accum (Percent)
-- Class Name
+- Allocated Bytes: amount of allocation in bytes 
+- Allocated Objects: number of allocated objects
+- Live Bytes: amount of allocated and not collected by GC bytes
+- Live Objects: number of allocated and not collected by GC objects
+- Self (Percent): amount of allocation in percents not including upper frames 
+- Accum (Percent): ammout of allocation in percents including upper frames
+- Class Name: class where allocations happened
 
 The data can look as follows in profiler
 ```Bash
