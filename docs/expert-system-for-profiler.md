@@ -66,17 +66,19 @@ logger.info("Exiting method execution: " + joinPoint.getSignature().getName() + 
 
    
 ### Objectives
-Here are just a few recommendation to improve logging performance
+Here is the list of recommendation to improve logging performance.
+
 - Recommendation for logging in the Hot Path:
-  - Change log filtering, leaving only ERROR logs in the Hot Path.
+  - Change log filtering leaving only ERROR logs in the Hot Path.
   - Avoid logging in the Hot Path when possible.
-  - Write only fraction of logs
 - Recommendation for expensive operation inside logs:
   - Avoid expensive operation inside logs.
 - Recommendation for excessive logging:
   - Avoid excessive logging when possible
 - Recommendation for logging large messages:
-  - 
+  - Consider using asynchronous logging 
+- Recommendation for slow writes operations
+  - Enable buffered logging
 
 
 ### Flow 2: [TBD]()
