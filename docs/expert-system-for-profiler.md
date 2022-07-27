@@ -66,7 +66,7 @@ logger.info("Exiting method execution: " + joinPoint.getSignature().getName() + 
 
    
 ### Objectives
-Here is the list of recommendation to improve logging performance.
+Here is the list of recommendations to improve logging performance.
 
 - Recommendation for logging in the Hot Path:
   - Change log filtering leaving only ERROR logs in the Hot Path.
