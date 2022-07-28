@@ -64,7 +64,7 @@ logger.info("Exiting method execution: " + joinPoint.getSignature().getName() + 
 - Problem 4: logging large messages. Consider an example when developer logs responses with payloads that come from external services. Another well known example when logging error with long stack traces.
 - Problem 5: slow write operations. By default, logging is blocking. When the runtime executes the log statement, the log gets written on the disk. The speed of writing onto the disk depends a lot on the underlying hardware which may be slow.
 
-   
+
 ### Objectives
 Here is the list of recommendations to improve logging performance.
 
@@ -94,6 +94,13 @@ The required recommendations will be implemented by re-using existing Recommenda
 </table> 
 
 On Recommendation Engine activation, each one of the investigations(LoggerSlowWritesInvestigation, LoggerExpensiveOperationInvestigation, LoggerHotPathInvestigation, LoggerExcessiveWritesInvestigation, LoggerLargeMessagesInvestigation) will run and use the Processor Query API to obtain the CPU Usage Samplings and Heap Allocation Samplings.
+
+#### Indicators to track
+All stated problems can be identified by tracking the following indicators of JVM Logger:
+    - Write Latency (long IO, or long Compute intensive operation) 
+    - High Memory Consumption
+    - Side Effect: GC time
+
 
 #### CPU Usage Sampling Structure
 Required fields for CPU Usage Sampling
