@@ -82,24 +82,7 @@ Here is the list of recommendations to improve logging performance.
 
 
 ### Solution
-
-#### Static Diagram
-The required recommendations will be implemented by re-using existing Recommendation Engine Infrastructure. Main infrastructures classes are Engine, Flow, Investigation, Steps and Summary.
-
-<table width="256px">
-  <tr>
-    <td><img src="../images/static-diagram.png"/></td>
-  </tr>
-  <tr><td align="center">Recommendation Engine Infrastructure</td></tr>
-</table> 
-
-On Recommendation Engine activation, each one of the investigations(LoggerSlowWritesInvestigation, LoggerExpensiveOperationInvestigation, LoggerHotPathInvestigation, LoggerExcessiveWritesInvestigation, LoggerLargeMessagesInvestigation) will run and use the Processor Query API to obtain the CPU Usage Samplings and Heap Allocation Samplings.
-
-#### Indicators to track
-All stated problems can be identified by tracking the following indicators of JVM Logger:
-    - Write Latency (long IO, or long Compute intensive operation) 
-    - High Memory Consumption
-    - Side Effect: GC time
+On one side of the system, we have a Cloud Profiler, that generates a stream of events during profiling session. On the other side, we have a developer that expects to see the visual presentation of profiling data and in addition he wants to get some assistance. The system should discover known patterns of JVM performance issues automatically.
 
 
 #### CPU Usage Sampling Structure
