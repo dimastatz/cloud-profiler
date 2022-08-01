@@ -82,7 +82,7 @@ Here is the list of recommendations to improve logging performance.
 
 
 ### Solution
-On one side of the system, we have a Cloud Profiler, that generates a stream of events during profiling session. On the other side, we have a developer that expects to see the visual presentation of profiling data and in addition he wants to get some assistance. The system should discover known patterns of JVM performance issues automatically.
+A Cloud Profiler generates a stream of events during profiling sessions. Event streams contain valuable information about the internal state of the profiled software applications. Some profilers just outputs the data to stdout, others use different visualization techniques to help developers to make sense of this data. In our solution we are adding a new piece of software which handles the stream of data and performs a pattern mining. We call this new piece of software: recommendation engine. 
 
 
 #### CPU Usage Sampling Structure

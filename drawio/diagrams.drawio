@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="0h7RQlpjayUFwvExTmw9" name="JProfiler">
-        <mxGraphModel dx="554" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="862" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -60,7 +60,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="Jsnulry82SwpmwSc3at5" name="Architecture">
-        <mxGraphModel dx="930" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="909" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="Tz8qQOiP3NTbOgc7Y25g-0"/>
                 <mxCell id="Tz8qQOiP3NTbOgc7Y25g-1" parent="Tz8qQOiP3NTbOgc7Y25g-0"/>
@@ -479,7 +479,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="0iyudZMxhzaZARG3t59N" name="java-util-logs">
-        <mxGraphModel dx="622" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="909" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="dTwiwkbbPRldoCLGwrIr-0"/>
                 <mxCell id="dTwiwkbbPRldoCLGwrIr-1" parent="dTwiwkbbPRldoCLGwrIr-0"/>
@@ -597,7 +597,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="hMC6DnbSqflN0aHaZWxJ" name="investigation-static-dgr">
-        <mxGraphModel dx="862" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="909" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="E2dJllsqO5A06sn71LY4-0"/>
                 <mxCell id="E2dJllsqO5A06sn71LY4-1" parent="E2dJllsqO5A06sn71LY4-0"/>
@@ -700,7 +700,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="vVql-Zc6zZhVj1tXDK8K" name="seq-dgr-hot-path">
-        <mxGraphModel dx="862" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="909" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="BSRYpj7ADubzcNHvpCa6-0"/>
                 <mxCell id="BSRYpj7ADubzcNHvpCa6-1" parent="BSRYpj7ADubzcNHvpCa6-0"/>
@@ -784,6 +784,14 @@
                         <mxPoint x="581" y="428" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="gQw2F-EEj5NPdcHoHao7" name="Page-8">
+        <mxGraphModel dx="669" dy="600" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="59Kgbqzj8krziXgBnw9M-0"/>
+                <mxCell id="59Kgbqzj8krziXgBnw9M-1" parent="59Kgbqzj8krziXgBnw9M-0"/>
             </root>
         </mxGraphModel>
     </diagram>
